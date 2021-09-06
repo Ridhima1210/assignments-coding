@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: tan;
+  background: url("https://source.unsplash.com/1600x900/?weather");
+}
+.card {
+  background: rgb(67, 82, 104);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 1em;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 0.5em;
+  border: none;
+  border-radius: 50%;
+  background-color: lightblue;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+input.search-bar {
+  border: none;
+  padding: 0.3em;
+  font-family: inherit;
+  font-size: 90%;
+  outline: none;
+}
+button:hover {
+  background-color: lightskyblue;
+}
+weather.h1 {
+  text-transform: capitalize;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 18px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+}
